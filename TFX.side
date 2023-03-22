@@ -1,0 +1,102 @@
+{
+  "id": "196d5f52-1d13-4466-a0c6-02eae8ae7f65",
+  "version": "2.0",
+  "name": "TFX",
+  "url": "https://secured.tfxi.com/ib/2862560",
+  "tests": [{
+    "id": "fd7d7730-8f58-4813-a109-831cc8839b83",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "311dc3fa-0a3d-41d8-b97f-bb379572ee1c",
+    "name": "joey",
+    "commands": [{
+      "id": "b9474564-a5ab-414f-b34a-d4e56e8fc49b",
+      "comment": "",
+      "command": "open",
+      "target": "https://secured.tfxi.com/en/applications/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e789fa60-3f62-4220-8d70-bbad28c33138",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x970",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8135970-eb7c-4a58-8a58-68286c4f0c4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='createApplicationForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Joselito Cajucom"
+    }, {
+      "id": "b62729c1-fad9-41ed-bbae-2175d252226a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='createApplicationForm']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "joselito.cajucom@gmail.com"
+    }, {
+      "id": "c526f989-d7d6-4bdd-b220-07c005d75f14",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='createApplicationForm']/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "+639177368124"
+    }, {
+      "id": "6fb6f310-cea2-4740-8d61-cfdc129a9a9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//button[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//form[@id='createApplicationForm']/div[8]/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f48612f-d7b8-4059-a083-9a205b49b410",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4fef6c3b-9dc5-4da5-ad41-3d1d6dd2af55",
+    "name": "Registration",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["311dc3fa-0a3d-41d8-b97f-bb379572ee1c"]
+  }],
+  "urls": [],
+  "plugins": []
+}
