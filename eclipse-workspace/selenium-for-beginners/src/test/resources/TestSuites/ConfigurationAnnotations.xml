@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ConfigurationAnnotations" verbose="2">
+	<test name="ConfigurationAnnotations">
+		<classes>
+			<class name="DemoTestNG.ConfigurationAnnotations_1_DatePickers">
+				<methods>
+					<include name="test1_BootstrapDatePicker"/>
+					<include name="test2_JQueryDatePicker"/>
+				</methods>
+			</class>
+			<class name="DemoTestNG.ConfigurationAnnotations_2_ListBox"/>
+		</classes>
+	</test>
+</suite>
+
+
+	

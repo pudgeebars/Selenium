@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-11T15:03:50 PST" name="Default suite" finished-at="2023-07-11T15:03:54 PST" duration-ms="4249">
+    <groups>
+    </groups>
+    <test started-at="2023-07-11T15:03:50 PST" name="Default test" finished-at="2023-07-11T15:03:54 PST" duration-ms="4249">
+      <class name="com.secured.tfxi.CoinSettlement">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.secured.tfxi.CoinSettlement@4802796d]" started-at="2023-07-11T15:03:50 PST" name="beforeTest" finished-at="2023-07-11T15:03:52 PST" duration-ms="1951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="automatedCoinSettlement(java.lang.String,java.lang.String)[pri:0, instance:com.secured.tfxi.CoinSettlement@4802796d]" started-at="2023-07-11T15:03:52 PST" name="automatedCoinSettlement" finished-at="2023-07-11T15:03:54 PST" duration-ms="2259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automatedCoinSettlement -->
+      </class> <!-- com.secured.tfxi.CoinSettlement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

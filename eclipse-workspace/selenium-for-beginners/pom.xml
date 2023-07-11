@@ -5,6 +5,7 @@
 	<groupId>com.herokuapp.theinternet</groupId>
 	<artifactId>selenium-for-beginners</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>Selenium For Beginners</name>
 
 	<dependencies>
@@ -14,17 +15,34 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.8.0</version>
-			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!--	https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.9.1</version>
 		</dependency>
 
-
+		<!-- https://bonigarcia.dev/webdrivermanager/ -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.3.3</version>
+		</dependency>
+		
+		<!-- https://logging.apache.org/log4j/2.x/maven-artifacts.html -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -43,15 +61,14 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0</version>
-				<!-- 
+
 				<configuration>
 					<suiteXmlFiles>
-				<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/TestSuites/Poker.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-				-->
-			</plugin>
 
+			</plugin>
 		</plugins>
 	</build>
 
